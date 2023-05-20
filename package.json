@@ -1,5 +1,5 @@
 {
-   "name": "medusa-plugin-reviews",
+   "name": "medusa-plugin-product-reviews",
    "version": "1.0.0",
    "description": "Product reviews plugin for MedusaJS",
    "main": "index.js",
@@ -17,6 +17,8 @@
       "@babel/plugin-syntax-decorators": "^7.21.0",
       "@babel/plugin-transform-instanceof": "^7.8.3",
       "@babel/plugin-transform-runtime": "^7.7.6",
+      "@babel/plugin-proposal-decorators": "^7.21.0",
+      "@babel/plugin-transform-classes": "^7.9.5",
       "@babel/preset-env": "^7.7.5",
       "@babel/preset-typescript": "^7.21.5",
       "@babel/register": "^7.7.4",
@@ -37,8 +39,6 @@
       "medusa-interfaces": "1.x"
    },
    "dependencies": {
-      "@babel/plugin-proposal-decorators": "^7.21.0",
-      "@babel/plugin-transform-classes": "^7.9.5",
       "body-parser": "^1.19.0",
       "express": "^4.17.1",
       "get-stream": "^6.0.1",
