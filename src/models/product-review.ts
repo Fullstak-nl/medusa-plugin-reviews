@@ -26,7 +26,7 @@ export class ProductReview extends BaseEntity {
     @Max(5)
     rating: number
 
-    @Column({ nullable: false })
+    @Column({ type: "varchar", nullable: false })
     content: string
 
     @BeforeInsert()
