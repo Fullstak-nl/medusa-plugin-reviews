@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-instanceof",
+    "@babel/plugin-transform-classes"
+  ],
+  "presets": [
+    ["@babel/preset-env",{ "targets": { "node": "current" } }],
+    "@babel/typescript"],
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-runtime"]
+    }
+  }
+}
