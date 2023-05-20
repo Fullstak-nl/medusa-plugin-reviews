@@ -11,8 +11,6 @@ Enable in your medusa-config.js file similar to other plugins:
 ```js
 const plugins = [
     // ... other plugins
-    {
-        resolve: `medusa-plugin-reviews`
-    }
+    `medusa-plugin-product-reviews`,
 ]
 ```
