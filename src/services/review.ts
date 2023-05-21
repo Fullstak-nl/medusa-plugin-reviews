@@ -5,11 +5,11 @@ class ReviewService extends TransactionBaseService {
     protected manager_: EntityManager
     private productReviewRepository: any;
 
-    constructor({ProductReviewRepository, manager}) {
-        super({ProductReviewRepository, manager});
+    constructor({productReviewRepository, manager}) {
+        super({productReviewRepository, manager});
 
         this.manager_ = manager;
-        this.productReviewRepository = ProductReviewRepository;
+        this.productReviewRepository = productReviewRepository;
     }
 
     async getProductReviews (product_id) {
