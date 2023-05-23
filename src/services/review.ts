@@ -14,8 +14,8 @@ class ReviewService extends TransactionBaseService {
 
     async getProductReviews (product_id) {
         const productReviewRepository = this.manager_.withRepository(this.productReviewRepository);
-        return await productReviewRepository.find({
-            product_id
+        return await productReviewRepository.findBy({
+            product_id: product_id
         });
     }
 
